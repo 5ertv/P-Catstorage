@@ -1,0 +1,185 @@
+body{
+    margin: 0;
+}
+.cabezote{
+    height: 100vh;
+    position: relative;
+}
+.top{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.301);
+    box-shadow: 0 0 8px black;  
+   /* background-color: rgba(0, 0, 0, 0.3);*/ 
+}
+.contenedor{
+    width: 75%;
+    margin: auto;
+}
+.top .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo h1{
+    color: white;
+
+}
+.logo h1 span{
+    color: tomato;
+}
+.bmenu ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.bmenu ul li:not(:last-child){
+    margin-right: 30px;
+}
+.bmenu ul li a{
+    color:white;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.bmenu ul li a:hover{
+    color:orange;
+    text-decoration: underline;
+}
+#blanquito{
+    color: white;
+}
+.caja-video video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.caja-video::after{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+}
+.caja-info{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+}
+.caja-info h2, .caja-info h3{
+    margin: 0 0 20px;
+}
+.caja-info h2{
+    font-size: 50px;
+    text-decoration: uppercase;
+}
+.caja-info h3{
+    font-size: 30px;
+    font-weight: 300;
+    font-style: italic;
+}
+.info{
+    background-color: wheat;
+    height: 100vh;
+}
+.botonlink{
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    position: absolute;
+    top: 500px;
+}
+.bton{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+    height: 90vh;
+    width: 20%;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px){
+    .contenedor{
+        width: 95%;
+    }
+    .caja-info h2{
+        font-size: 40px;
+    }
+    .caja-info h3{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 650px){
+    .contenedor{
+        width: 95%;
+    }
+    .bmenu{
+        width: 40%;
+    }
+    .logo{
+        display: none;
+    }
+    .caja-info h2{
+        font-size: 40px;
+    }
+    .caja-info h3{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 450px){
+    .bton{
+        width: 80%;
+    }
+    .contenedor{
+        width: 100%;
+    }
+    .bmenu{
+        width: 40%;
+    }
+    .logo{
+        display: none;
+    }
+    .top{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 390px){
+    .bton{
+        width: 90%;
+        top: 50px;
+    }
+    .contenedor{
+        width: 100%;
+    }
+    .bmenu{
+        width: 40%;
+    }
+    .logo{
+        display: none;
+    }
+    .top{
+        font-size: 11px;
+    }
+}
